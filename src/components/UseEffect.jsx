@@ -5,10 +5,14 @@ function UseEffect() {
 
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
     function handleResize () {
         setWindowWidth(window.innerWidth)
+        setWindowHeight(window.innerHeight)
     }
+
+   
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
@@ -34,8 +38,11 @@ function UseEffect() {
 
 
     <div  className='h-screen flex flex-col bg-slate-600' id='text'>
-        {windowWidth}
+        {windowWidth}<br></br>
+        {windowHeight}
     </div>
+
+  
     
     </>
   )
