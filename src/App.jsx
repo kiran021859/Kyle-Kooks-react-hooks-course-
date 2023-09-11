@@ -4,6 +4,7 @@ import UseState from './components/UseState';
 import UseEffect from './components/UseEffect';
 import UseRef from './components/UseRef';
 import { TextProvider } from './components/UseContext'
+import UseMemo from './components/UseMemo';
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <UseState/>
     <UseEffect/>
     <UseRef/>
+    <UseMemo/>
   </TextProvider>  
   
   </>

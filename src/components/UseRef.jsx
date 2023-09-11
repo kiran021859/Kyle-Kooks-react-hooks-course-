@@ -21,17 +21,17 @@ useEffect(() => {
    //count.current = count.current + 1
    prevName.current = name
 
-}, [name])
+}, [name]);
 
 function focus () {
     inputRef.current.focus()    
-}
+};
 
   return (
     <>
     <div className='h-screen flex flex-col bg-slate-600'>
         {/*<input value={name} onChange={e => setName(e.target.value) } id='input'></input>*/}
-        <input value={name} onChange={e => setName(e.target.value) } id='input'></input>
+        <input ref={inputRef} value={name} onChange={e => setName(e.target.value) } id='input'></input>
         <div id='text'>My name is {name} My name was {prevName.current}</div>
         {/*<div id='text'>I rendeered {count.current} times</div>*/}
         {/*<div id='text'>I rendeered {count.current} times</div>*/}
